@@ -3,10 +3,11 @@ import {
   useContext,
   useState
 } from 'react';
+import initialCards from './cards-data';
 
 const Context = createContext();
 
-export default function Provider({ children }) {
+export default function GameProvider({ children }) {
   const [deck, setDeck] = useState(initialCards);
   const [playerOneHand, setPlayerOneHand] = useState([]);
   const [selectedCard, setSelectedCard] = useState();

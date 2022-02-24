@@ -1,5 +1,4 @@
 import './App.css';
-import initialCards from './cards-data';
 import Player from './Player';
 import CardList from './CardList';
 import { useGameContext, useState } from 'react';
