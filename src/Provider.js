@@ -16,7 +16,7 @@ export default function Provider({ children }) {
   const [to, setTo] = useState(1);
   
 
-const stateAndSetters {
+  const stateAndSetters = {
     deck, setDeck,
     playerOneHand, setPlayerOneHand,
     selectedCard, setSelectedCard,
@@ -24,13 +24,13 @@ const stateAndSetters {
     playerThreeHand, setPlayerThreeHand,
     from, setFrom,
     to, setTo,
-};
+  };
 
-    return <Context.Provider value={stateAndSetters}>
-        {children}
-    </Context.Provider>
+  return <Context.Provider value={stateAndSetters}>
+    {children}
+  </Context.Provider>;
 }
 
-export function useContext() {
-    return useContext(Context);
+export function useGameContext() {
+  return useContext(Context);
 }

@@ -2,9 +2,8 @@ import './App.css';
 import initialCards from './cards-data';
 import Player from './Player';
 import CardList from './CardList';
-import { useContext, useState } from 'react';
+import { useGameContext, useState } from 'react';
 import ExecutePassButton from './ExecutePassButton';
-import StyleLayout from './StyleLayout';
 
 function App() {
 
@@ -14,7 +13,7 @@ function App() {
     playerOneHand,
     playerTwoHand,
     playerThreeHand
-  } = useContext();
+  } = useGameContext();
 
   return (
     <div className="App">
